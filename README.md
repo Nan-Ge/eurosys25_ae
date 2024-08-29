@@ -1,21 +1,10 @@
-# AE Instruction - Submission ID 115
-
-**Thanks for the support and effort from the reviewers during the artifact evaluation.**  
-
-Readers can reproduce the main results of the paper by following the steps below:
-
-1. Download the code repository from [**XXXX**].
-2. Download the dataset from [**XXXX**].
-3. Install the required environment (details in Sec.2.2 of this doc).
-4. Run the script as described in Sec.3 of this doc.
-
 ## 1 Repository Structure
 - After `git clone`, you will see the directory structure shown below:
   - The `./dataset` folder contains the dataset needed for AE. Readers need to manually extract the dataset downloaded to this path. 
     - The folders named as `section[x]` contain the data required for "Section X" in the paper. 
     - The `raw_dataset` folder includes the metric and trace datasets as described in Section 2.3 in the paper. 
     - It's important to mention that computing directly on the `raw_dataset` can be very time-consuming (potentially taking several hours). Therefore, what we provide in the `section[x]` folders are precomputed data derived from the `raw_dataset`. 
-  - The `./source_code` folder contains scripts organized by sections that are required to reproduce the results of the paper. For security concerns, readers need to use the password **971007** to decrypt the `source_code.zip`. This folder contains two types of files:
+  - The `./source_code` folder contains scripts organized by sections that are required to reproduce the results of the paper. This folder contains two types of files:
     - **R scripts** for simple calculations and plotting, which can directly generate the tables and figures in the paper. 
     - **Python scripts** for pre-calculating on the `raw_dataset` and for various simulation experiments. 
     - Both types of scripts can be run directly after setting the working directory.
