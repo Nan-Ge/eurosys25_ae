@@ -1,4 +1,5 @@
 ## 1 Repository Structure
+
 - After `git clone`, you will see the directory structure shown below:
   - The `./dataset` folder contains the dataset needed for AE. Readers need to manually extract the dataset downloaded to this path. 
     - The folders named as `section[x]` contain the data required for "Section X" in the paper. 
@@ -26,6 +27,7 @@
     --- figure_1_b.pdf
     --- ...
 ```
+
 ## 2 Requirements
 
 ### 2.1 Download Dataset
@@ -42,6 +44,7 @@ It is important to note that **installing R alone is sufficient to reproduce the
 ### 2.3 Modify Working Directory
 
 To run the R and Python scripts, readers need to manually modify the working directory in the source code files. 
+
 - For R scripts, search for `setwd` in the code file and modify the path as `setwd("/path/to/eurosys25_ae")`.
 - For Python scripts, searchr for `os.chdir()` in the code file and modify the path as `os.chdir("/path/to/eurosys25_ae")`.
 
